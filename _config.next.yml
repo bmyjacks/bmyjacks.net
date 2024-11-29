@@ -656,11 +656,11 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active:
+  active: disqusjs
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: false
+  lazyload: true
   # Modify texts or order for any naves, here are some examples.
   nav:
     #disqus:
@@ -679,14 +679,14 @@ disqus:
 # DisqusJS
 # For more information: https://disqusjs.skk.moe
 disqusjs:
-  enable: false
+  enable: true
   # API Endpoint of Disqus API (https://disqus.com/api/docs/).
   # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
   # For example:
   # api: https://disqus.skk.moe/disqus/
-  api:
-  apikey: # Register new application from https://disqus.com/api/applications/
-  shortname: # See: https://disqus.com/admin/settings/general/
+  api: https://disqus.skk.moe/disqus/
+  apikey: FSFFDYAgfPewRFfS8d9vv7AviLY7b4Oo7WSOPy4ikHSyICQaNRkii8sooPS6gLj3 # Register new application from https://disqus.com/api/applications/
+  shortname: bmyjacks-net # See: https://disqus.com/admin/settings/general/
 
 # Changyan
 # For more information: https://changyan.kuaizhan.com
