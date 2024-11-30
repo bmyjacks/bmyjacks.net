@@ -11,7 +11,7 @@ keywords:
 description: 入门OpenGL的第二部分-创建一个窗口
 hide: false
 comments: true
-katex: false
+mathjax: false
 date: 2021-08-02 11:45:34
 updated: 2021-08-02 11:45:34
 ---

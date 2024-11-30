@@ -11,7 +11,7 @@ keywords:
 description: 并查集学习笔记——十分优美的数据结构
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-08-26 10:04:30

@@ -13,7 +13,7 @@ keywords:
 description: LCIS 最长公共上升子序列学习笔记
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-09-26 20:13:45

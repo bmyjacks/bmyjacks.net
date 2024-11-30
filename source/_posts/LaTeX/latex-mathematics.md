@@ -12,7 +12,7 @@ keywords:
 description: LaTeX数学公式指南（KaTeX版）
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-08-29 16:33:31

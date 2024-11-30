@@ -14,7 +14,7 @@ keywords:
 description: 本地 python 机器学习环境配置复杂？快来试试在线的 deepnote 吧！
 hide: false
 comments: true
-katex: false
+mathjax: false
 sticky: 0
 sitemap: true
 date: 2021-10-12 15:03:52

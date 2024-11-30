@@ -14,7 +14,7 @@ categories:
 sticky: 0
 hide: false
 comments: true
-katex: true
+mathjax: true
 sitemap: true
 date: 2021-04-10 00:00:00
 updated: 2021-11-05 00:00:00

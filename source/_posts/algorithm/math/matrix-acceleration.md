@@ -11,7 +11,7 @@ keywords:
 description: 矩阵加速学习笔记
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-10-02 17:22:32

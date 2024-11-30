@@ -12,7 +12,7 @@ keywords:
 description: 双端栈学习笔记——名字虽相似，但与双端队列完全不同
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-08-24 16:33:23

@@ -8,7 +8,7 @@ description: 一步步带您自定义jetson nano的系统
 hide: false
 comments: true
 categories: jetson nano
-katex: false
+mathjax: false
 date: 2021-06-07 14:58:31
 updated: 2021-06-07 14:58:31
 ---

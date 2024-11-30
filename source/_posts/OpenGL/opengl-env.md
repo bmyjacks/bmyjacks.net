@@ -13,7 +13,7 @@ description: 入门OpenGL的第一部分-搭建开发环境
 hide: false
 comments: true
 categories: OpenGL
-katex: false
+mathjax: false
 ---
 
 {% note info %}

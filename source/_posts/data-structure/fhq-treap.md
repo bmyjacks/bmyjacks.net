@@ -14,7 +14,7 @@ keywords:
 description: FHQ Treap学习笔记
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-08-23 21:24:14

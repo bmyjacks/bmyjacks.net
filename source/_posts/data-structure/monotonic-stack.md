@@ -10,7 +10,7 @@ keywords:
 description: 单调栈学习笔记
 hide: false
 comments: true
-katex: false
+mathjax: false
 sticky: 0
 sitemap: true
 date: 2021-08-23 19:26:07

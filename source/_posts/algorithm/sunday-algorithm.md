@@ -13,7 +13,7 @@ description: 十分钟带你学会 Sunday 算法
 sticky: 0
 hide: false
 comments: true
-katex: false
+mathjax: false
 sitemap: true
 date: 2021-04-14 09:19:29
 updated: 2021-04-14 09:19:29

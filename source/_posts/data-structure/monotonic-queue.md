@@ -10,7 +10,7 @@ keywords:
 description: 单调队列学习笔记
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-08-24 19:31:13

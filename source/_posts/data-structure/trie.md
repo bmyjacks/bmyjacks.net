@@ -12,7 +12,7 @@ keywords:
 description: Trie 学习笔记
 sticky: 0
 comments: true
-katex: true
+mathjax: true
 sitemap: true
 date: 2021-11-03 20:27:01
 updated: 2021-11-03 21:19:45

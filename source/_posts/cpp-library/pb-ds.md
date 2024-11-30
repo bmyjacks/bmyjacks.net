@@ -13,7 +13,7 @@ keywords:
 description: pb_ds 库介绍
 hide: false
 comments: true
-katex: true
+mathjax: true
 sticky: 0
 sitemap: true
 date: 2021-09-17 19:42:03
