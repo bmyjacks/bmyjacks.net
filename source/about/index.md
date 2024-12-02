@@ -23,6 +23,7 @@ updated: 2024-11-30
   - [Steam](https://steamcommunity.com/id/bmyjacks/)
   - [PlayStation](https://psnprofiles.com/bmyjacks)
   - Nintendo: 好友编号还是联系我吧
+  - MSFS 2020/2024: 喜欢空客和佳明的航电
 - 看长视频
 - 折腾电脑
 
