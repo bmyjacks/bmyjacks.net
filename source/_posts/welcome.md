@@ -15,6 +15,6 @@ header: true
 
 #### 迁移提醒
 
-这个博客目前正在被迁移，请确保使用的是 [bmyjacks.net](https://bmyjacks.net) 进行访问，文章的语言也会慢慢修改。谢谢您的谅解。
+这个博客目前正在被迁移，请确保使用的是 [bmyjacks.net](https://bmyjacks.net/) 进行访问，文章的语言也会慢慢修改。谢谢您的谅解。
 
 {% endnote %}
