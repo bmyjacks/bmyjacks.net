@@ -17,4 +17,5 @@ wheels/
 .DS_Store
 
 # Mkdocs generated files
-.cache
+.cache/
+site/
