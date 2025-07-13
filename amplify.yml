@@ -3,8 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - curl -LsSf https://astral.sh/uv/install.sh | sh
-        - uv sync
+        - python3 -m pip install -r requirements.txt
     build:
       commands:
         - mkdocs build
