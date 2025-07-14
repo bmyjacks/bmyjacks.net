@@ -12,7 +12,7 @@
 
     Overview -> iDRAC Settings - > Network -> OS to iDRAC Pass-through
 
-    ![iDRAC 8 OS to iDRAC Pass-through page](1.avif)
+    ![iDRAC 8 OS to iDRAC Pass-through page](https://assets.bmyjacks.net/img/490129b6.avif)
 
 === "iDRAC 9"
 
@@ -20,7 +20,7 @@
 
     iDRAC Settings - > Connectivity -> OS to iDRAC Pass-through
 
-    ![iDRAC 9 OS to iDRAC Pass-through page](2.avif)
+    ![iDRAC 9 OS to iDRAC Pass-through page](https://assets.bmyjacks.net/img/7b45ad4d.avif)
 
 设置为 USB NIC 模式后，系统中会出现名为 `idrac` 的网络接口，MAC 地址前缀与 iDRAC 的 MAC 地址前缀相同。
 
@@ -74,7 +74,7 @@ systemctl status dcismeng
 在 iDRAC 中也可以查看更多的 OS 信息了：
 
 === "iDRAC 8"
-    ![iDRAC 8 system info](3.avif)
+    ![iDRAC 8 system info](https://assets.bmyjacks.net/img/1510eb28.avif)
 
 === "iDRAC 9"
-    ![iDRAC 9 system info](4.avif)
+    ![iDRAC 9 system info](https://assets.bmyjacks.net/img/1f69340d.avif)
