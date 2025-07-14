@@ -3,7 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - pyenv global 3.11
+        - pyenv install 3.13
+        - pyenv global 3.13
         - pip install -r requirements.txt
     build:
       commands:
