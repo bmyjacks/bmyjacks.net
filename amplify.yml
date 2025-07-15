@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - pyenv install 3.13
+        - pyenv global 3.13
+        - pip install -r requirements.txt
+    build:
+      commands:
+        - mkdocs build
+  artifacts:
+    baseDirectory: site
+    files:
+      - "**/*"
+  cache:
+    paths: []
