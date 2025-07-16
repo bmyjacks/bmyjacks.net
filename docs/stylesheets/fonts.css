@@ -1,0 +1,6 @@
+@import url("https://fontsapi.zeoseven.com/442/main/result.css");
+
+:root {
+    --md-text-font: "Maple Mono NF CN", sans-serif;
+    --md-code-font: "Maple Mono NF CN", monospace;
+}

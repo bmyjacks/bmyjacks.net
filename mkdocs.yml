@@ -3,7 +3,7 @@ site_url: https://bmyjacks.net
 site_description: 分享个人的知识和经验
 site_author: bmyjacks
 
-copyright: Copyright &copy; 2020 - 2025 bmyjacks
+copyright: Copyright &copy; 2020 - 2025 bmyjacks. <p xmlns:cc="http://creativecommons.org/ns#" ><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:31px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"></a></p>
 
 theme:
   name: material
@@ -28,9 +28,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
   language: zh
-  font:
-    text: Noto Sans SC
-    code: JetBrains Mono
+  font: false
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -42,13 +40,26 @@ theme:
     - search.suggest
     - search.share
     - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+
+extra_css:
+  - stylesheets/fonts.css
 
 plugins:
   - search
   - social:
+      enabled: !ENV [CI, false]
       cards_layout_options:
         font_family: Noto Sans SC
   - glightbox
+  - minify:
+      minify_html: true
+      minify_js: false
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
 
 markdown_extensions:
   - pymdownx.superfences
@@ -63,8 +74,24 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
   - pymdownx.blocks.caption
+  - footnotes
+  - tables
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      pygments_lang_class: true
+      auto_title: true
+      linenums_style: pymdownx-inline
+      line_spans: __span
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
 
 nav:
   - 主页: index.md
+  - Markdown:
+      - 启程: markdown/index.md
+      - 基本用法: markdown/basic.md
   - Homelab:
       - 安装 iSM: homelab/install-ism.md
