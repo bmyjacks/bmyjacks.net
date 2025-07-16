@@ -3,7 +3,7 @@ site_url: https://bmyjacks.net
 site_description: 分享个人的知识和经验
 site_author: bmyjacks
 
-copyright: Copyright &copy; 2020 - 2025 bmyjacks. <p xmlns:cc="http://creativecommons.org/ns#" ><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:31px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"></a></p>
+copyright: Copyright &copy; 2020 - 2025 bmyjacks. <p xmlns:cc="http://creativecommons.org/ns#" ><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:31px!important;margin-left:3px;vertical-align:text-bottom;" src="https://assets.bmyjacks.net/img/by.svg"></a></p>
 
 theme:
   name: material
