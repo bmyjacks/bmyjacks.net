@@ -94,4 +94,5 @@ nav:
       - 启程: markdown/index.md
       - 基本用法: markdown/basic.md
   - Homelab:
+      - 介绍: homelab/index.md
       - 安装 iSM: homelab/install-ism.md
