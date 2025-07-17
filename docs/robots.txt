@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://bmyjacks.net/sitemap.xml
