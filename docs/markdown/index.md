@@ -2,7 +2,7 @@
 
 ## 什么是 Markdown
 
-**Markdown** 是一种轻量级标记语言（看看它的名字就知道了 :smile:），用于在纯文本编辑器中创建格式化文本。[ ^1 ] 由 [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) 于 2004 年创建，如今被广泛使用。
+**Markdown** 是一种轻量级标记语言（看看它的名字就知道了 :smile:），用于在纯文本编辑器中创建格式化文本。[^1] 由 [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) 于 2004 年创建，如今被广泛使用。
 
 [^1]: 这有点让人困惑，但你可以想象记事本自带了一些基础的 Word 功能。
 
