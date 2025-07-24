@@ -95,6 +95,8 @@ nav:
       - 基本用法: markdown/basic.md
   - Homelab:
       - 介绍: homelab/index.md
-      - 选择服务器: homelab/choose-server.md
-      - 选择 CPU: homelab/choose-cpu.md
-      - 安装 iSM: homelab/install-ism.md
+      - 硬件:
+          - 选择服务器: homelab/choose-server.md
+          - 选择 CPU: homelab/choose-cpu.md
+      - 软件:
+          - 安装 iSM: homelab/install-ism.md
