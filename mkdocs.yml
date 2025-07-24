@@ -2,6 +2,8 @@ site_name: bmyjacks 知识库
 site_url: https://bmyjacks.net
 site_description: 分享个人的知识和经验
 site_author: bmyjacks
+repo_url: https://github.com/bmyjacks/bmyjacks.net
+repo_name: bmyjacks/bmyjacks.net
 
 copyright: Copyright &copy; 2020 - 2025 bmyjacks. <p xmlns:cc="http://creativecommons.org/ns#" ><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;"><img style="height:31px!important;margin-left:3px;vertical-align:text-bottom;" src="https://assets.bmyjacks.net/img/by.svg"></a></p>
 
@@ -98,6 +100,8 @@ nav:
       - 硬件:
           - 选择服务器: homelab/choose-server.md
           - 选择 CPU: homelab/choose-cpu.md
+          - 选择硬 RAID 卡: homelab/choose-hardware-raid.md
+          - 选择软件 RAID 方案: homelab/choose-software-raid.md
       - 软件:
           - Arch Linux: os/archlinux.md
           - NixOS: os/nixos.md
