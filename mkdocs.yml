@@ -45,6 +45,24 @@ theme:
     - content.code.copy
     - content.code.annotate
 
+extra:
+  analytics:
+    provider: google
+    property: G-X75MF68CV5
+    feedback:
+      title: 此文章是否对您有帮助？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: 此页面很有帮助
+          data: 1
+          note: >-
+            感谢您的反馈！
+        - icon: material/thumb-down-outline
+          name: 此页面仍需改进
+          data: 0
+          note: >- 
+            感谢您的反馈！请在 <a href="https://github.com/bmyjacks/bmyjacks.net/discussions" target="_blank" rel="noopener"> GitHub Discussions </a> 提出您的意见或建议。
+
 extra_css:
   - stylesheets/fonts.css
 
