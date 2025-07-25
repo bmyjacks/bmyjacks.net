@@ -62,6 +62,9 @@ plugins:
       htmlmin_opts:
         remove_comments: true
       cache_safe: true
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: timeago
 
 markdown_extensions:
   - pymdownx.superfences
