@@ -6,7 +6,7 @@
 
 ??? note "详细下载步骤"
     1. 访问 [Archlinux 下载页面](https://archlinux.org/download/)。
-    2. 向下滚动寻找适合您的镜像站，例如 [China 列表里的](https://archlinux.org/download/#:~:text=hnd.cl-,China,-aliyun.com)，点击链接。
+    2. 向下滚动寻找适合您的镜像站，例如 [China 列表里的](https://archlinux.org/download/#:~:text=hnd.cl-,China)，点击链接。
     3. 在镜像站的页面中，寻找以 `archlinux-YYYY.MM.DD-x86_64.iso` 命名的文件，点击下载。
 
 ### 校验 ISO 镜像
@@ -25,7 +25,8 @@ sha256sum archlinux-YYYY.MM.DD-x86_64.iso
 
 ## 启动 archiso
 
-将制作好的启动盘插入电脑，重启并进入 One-Time Boot Menu (通常可以通过按 {% button #, F12 %}、{% button #, F11 %}、{% button #, F10 %}、{% button #, Del %} 或 {% button #, Esc %} 键进入，请查看对应主板的说明书或在线查找)，选择 USB 启动。
+将制作好的启动盘插入电脑，重启并进入 One-Time Boot Menu (通常可以通过按 F12
+、F11、F10、 Del 或 Esc 键进入，请查看对应主板的说明书或在线查找)，选择 USB 启动。
 
 ## 安装
 
@@ -44,25 +45,27 @@ sha256sum archlinux-YYYY.MM.DD-x86_64.iso
 
 ### 格式化磁盘并挂载分区
 
-使用 `lsblk` 命令查看磁盘信息，找到要安装 Archlinux 的磁盘（对于 SATA 磁盘通常是 `/dev/sda`，对于 NVMe 磁盘通常是 `/dev/nvme0n1`）。下文以 `/dev/nvme0n1` 为例，使用 [BTRFS](https://btrfs.readthedocs.io/en/latest/) 文件系统。
+使用 `lsblk` 命令查看磁盘信息，找到要安装 Archlinux 的磁盘（对于 SATA 磁盘通常是 `/dev/sdX`，对于 NVMe 磁盘通常是 `/dev/nvmeXnY`）。下文以 `/dev/nvme0n1` 为例，使用 [BTRFS](https://btrfs.readthedocs.io/en/latest/) 文件系统。
 
 !!! danger
-    **请确保您选择了正确的磁盘！** 格式化磁盘会删除对应的硬盘中所有数据。
+    **请确保您选择了正确的磁盘！格式化磁盘会删除对应的硬盘中所有数据**。
 
 #### 格式化磁盘
+
+如果磁盘支持 Memory cell clearing，请参阅 [Solid_state_drive/Memory_cell_clearing](https://wiki.archlinux.org/title/Solid_state_drive/Memory_cell_clearing) 进行安全擦除操作。
+
+或者采用删除所有分区的方式：
 
 ```sh
 wipefs -af /dev/nvme0n1
 ```
 
-如果磁盘支持 Memory cell clearing，请参阅 [Solid_state_drive/Memory_cell_clearing#NVMe_drive](https://wiki.archlinux.org/title/Solid_state_drive/Memory_cell_clearing#NVMe_drive) 进行操作。
-
 #### 分区磁盘
 
-使用 `parted` 工具分区磁盘：
+使用 `parted` 工具分区磁盘并[对齐到最优sector](https://unix.stackexchange.com/questions/38164/create-partition-aligned-using-parted)：
 
 ```sh
-parted /dev/nvme0n1
+parted -a optimal /dev/nvme0n1
 ```
 
 在 `parted` 命令行（以 `(parted)` 提示符开始）中输入以下命令：
@@ -86,6 +89,17 @@ print
 # 退出 parted
 quit
 ```
+
+??? note "如果在运行 `mkpart "EFI system partition" fat32 1MiB 513MiB` 时出现问题"
+    可能会遇到类似以下的警告：
+    ```text
+    Warning: The resulting partition is not properly aligned for best performance:
+    2048s % 768s != 0s
+    ```
+    这时我们需要手动指定分区的起始位置：
+    ```sh
+    mkpart "EFI system partition" fat32 768s 513MiB
+    ```
 
 #### 格式化分区
 
@@ -220,16 +234,30 @@ echo "archlinux" > /etc/hostname
 
 编辑 `/etc/systemd/network/20-wired.network` 文件，添加：
 
-```plaintext
-[Match]
-Name=en*
+=== "DHCP"
 
-[Link]
-RequiredForOnline=routable
+    ```ini
+    [Match]
+    Name=en*
 
-[Network]
-DHCP=yes
-```
+    [Link]
+    RequiredForOnline=routable
+
+    [Network]
+    DHCP=yes
+    ```
+
+=== "静态 IP"
+
+    ```ini
+    [Match]
+    Name=eno1
+
+    [Network]
+    Address=192.168.1.2/24
+    Gateway=192.168.1.1
+    DNS=192.168.1.1
+    ```
 
 接着启用对应的服务：
 
@@ -242,19 +270,17 @@ systemctl enable systemd-resolved.service
 
 如果不想使用 `systemd-networkd`，可以使用 [NetworkManager](https://wiki.archlinux.org/title/NetworkManager) 或者 [dhcpcd](https://wiki.archlinux.org/title/Dhcpcd) 等，他们的区别详见 [Network_configuration#Network_managers](https://wiki.archlinux.org/title/Network_configuration#Network_managers)
 
-{% note info %}
-
-如果后续使用时，遇到 `127.0.0.1:53` 的 DNS 错误，请使用 [adguardhome 的 docker镜像](https://hub.docker.com/r/adguard/adguardhome#resolved-daemon) 中提到的方法解决。
-
-{% endnote %}
+!!! note
+    如果后续使用时，遇到 `127.0.0.1:53` 的 DNS 错误，请使用 [adguardhome 的 docker镜像](https://hub.docker.com/r/adguard/adguardhome#resolved-daemon) 中提到的方法解决。
 
 ### 设置密码
 
-如果需要设置 `root` 用户的密码，可以使用以下命令：
+??? note "如果需要设置 `root` 用户的密码"
+    可以使用以下命令：
 
-```sh
-passwd
-```
+    ```sh
+    passwd
+    ```
 
 ### 创建新用户
 
@@ -298,11 +324,12 @@ EDITOR=vim visudo
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 ```
 
-如果您的电脑使用非标准UEFI（例如[Dell Wyse 3040](https://www.dell.com/support/product-details/en-hk/product/wyse-3040-thin-client/overview)），请添加 `--removable` 选项：
+??? "如果您的电脑使用非标准UEFI（例如[Dell Wyse 3040](https://www.dell.com/support/product-details/en-hk/product/wyse-3040-thin-client/overview)）"
+    请添加 `--removable` 选项：
 
-```sh
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB --removable
-```
+    ```sh
+    grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB --removable
+    ```
 
 #### 配置 GRUB
 
