@@ -132,3 +132,6 @@ nav:
           - Arch Linux: os/archlinux.md
           - NixOS: os/nixos.md
           - 安装 iSM: homelab/install-ism.md
+  - Minecraft:
+      - 服务器:
+          - 安装 NeoForge 服务器端: minecraft/install-neoforge-server.md
