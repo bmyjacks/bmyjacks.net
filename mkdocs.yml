@@ -60,8 +60,13 @@ extra:
         - icon: material/thumb-down-outline
           name: 此页面仍需改进
           data: 0
-          note: >- 
+          note: >-
             感谢您的反馈！请在 <a href="https://github.com/bmyjacks/bmyjacks.net/discussions" target="_blank" rel="noopener"> GitHub Discussions </a> 提出您的意见或建议。
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bmyjacks
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/mingyi_b
 
 extra_css:
   - stylesheets/fonts.css
