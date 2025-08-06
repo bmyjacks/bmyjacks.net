@@ -8,7 +8,7 @@
 
 前往 [NeoForge 官网](https://neoforged.net/) 的下载页面，选择对应的 Minecraft 和 NeoForge 版本，下载最新的 NeoForge 服务器端安装包。
 
-![alt text](<Screenshot 2025-08-01 at 21.31.32.png>)
+![NeoForge 官网图例](https://assets.bmyjacks.net/img/2025_08_06_21_01_02.avif)
 
 下载后得到 `neoforge-xx.x.yyy-installer.jar` 文件，其中 `xx.x` 是 Minecraft 版本，`xx.x.yyy` 是 NeoForge 版本。
 
