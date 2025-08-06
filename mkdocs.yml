@@ -128,6 +128,8 @@ nav:
           - 选择 CPU: homelab/choose-cpu.md
           - 选择硬 RAID 卡: homelab/choose-hardware-raid.md
           - 选择软件 RAID 方案: homelab/choose-software-raid.md
+          - R640 折腾:
+              - 概述: homelab/r640/index.md
       - 软件:
           - Arch Linux: os/archlinux.md
           - NixOS: os/nixos.md
