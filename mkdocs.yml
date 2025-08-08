@@ -130,6 +130,7 @@ nav:
           - 选择软件 RAID 方案: homelab/choose-software-raid.md
           - R640 折腾:
               - 概述: homelab/r640/index.md
+              - 内存折腾日记: homelab/r640/mem.md
       - 软件:
           - Arch Linux: os/archlinux.md
           - NixOS: os/nixos.md

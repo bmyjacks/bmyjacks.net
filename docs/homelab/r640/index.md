@@ -12,7 +12,7 @@
 - **CPU**: 2x [Intel Xeon Gold 6230](https://www.intel.com/content/www/us/en/products/sku/192437/intel-xeon-gold-6230-processor-27-5m-cache-2-10-ghz/specifications.html)
 - **内存**: 12x [Samsung M393A2G40DB1-CRC](https://semiconductor.samsung.com/dram/module/rdimm/m393a2g40db1-crc/)，也就是 16GB 2400Mbps 的 DDR4 RDIMM。
 - **持久内存**: 12x [Intel Optane PMem NMA1XXD128GPS](https://www.intel.com/content/www/us/en/products/sku/190348/intel-optane-persistent-memory-100-series-128gb-module/specifications.html)
-- **硬盘**: 2x [Intel S3500](https://www.intel.com/content/dam/www/public/us/en/documents/product-specifications/ssd-dc-s3500-spec.pdf) 240GB，2x [Intel S4500](https://tiscom.ru/sites/default/files/additional/ssd-dc-s4500-s4600-brief.pdf) 240GB，4x [Samsung PM853T](https://ftp.hydata.com/Downloads/scsitools/scsitools.Lite/Resources/LOD_FactoryMadeLOD-Files/Samsung/MZ7GE/PM853T-SATA-Product-Manual.pdf) 240GB。
+- **硬盘**: <del>2x [Intel S3500](https://www.intel.com/content/dam/www/public/us/en/documents/product-specifications/ssd-dc-s3500-spec.pdf) 240GB，2x [Intel S4500](https://tiscom.ru/sites/default/files/additional/ssd-dc-s4500-s4600-brief.pdf) 240GB，4x [Samsung PM853T](https://ftp.hydata.com/Downloads/scsitools/scsitools.Lite/Resources/LOD_FactoryMadeLOD-Files/Samsung/MZ7GE/PM853T-SATA-Product-Manual.pdf) 240GB。</del> 所有硬盘已经转移到 R630 上，R640 目前没有硬盘。
 - **RAID卡**: [PERC H740p Mini](https://objects.icecat.biz/objects/mmo_38074103_1553678750_5018_8435.pdf)
 - **NDC/NIC**: [Intel i350-T4](https://www.intel.com/content/www/us/en/products/sku/184824/intel-ethernet-network-adapter-i350t4-for-ocp-3-0/specifications.html)，很经典的千兆网卡，4x 1GbE RJ45 接口。
 - **PSU**: Delta 750W + Artesyn 750W。
