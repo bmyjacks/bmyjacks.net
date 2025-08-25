@@ -131,6 +131,7 @@ nav:
           - R640 折腾:
               - 概述: homelab/r640/index.md
               - 内存折腾日记: homelab/r640/mem.md
+              - Systemd-boot 折腾: homelab/r640/systemd-boot.md
       - 软件:
           - Arch Linux: os/archlinux.md
           - NixOS: os/nixos.md
