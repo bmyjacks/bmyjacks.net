@@ -48,6 +48,9 @@ ndctl create-namespace --region=regionX --mode=fsdax --map=dev
 
 而接下来就是常规的安装 OS 的过程了，我使用 Arch Linux，安装教程可以参考 [我的另一篇文章](../../os/archlinux.md)
 
+!!! note "最后的结果"
+    经过一番折腾，如果将 rootfs 安装在 PMem 上，由于系统的 bootloader 无法在启动时识别 PMem，因此无法挂载对应的分区，所以最终还是将 rootfs 安装在传统的 NVMe SSD 上，而将 PMem 用作数据分区。
+
 ### 性能测试
 
 ### 附言
