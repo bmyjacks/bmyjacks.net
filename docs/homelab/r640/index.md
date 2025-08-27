@@ -1,12 +1,12 @@
 # R640 概述
 
-由于 Summer 25 的周期实在太长（5月底到8月底），而[主包](/#fn:1)在这酷热的夏天既不上暑课也不实习，而是呆在家里享清福，决定继续折腾 homelab。
+由于 Summer 25 的周期实在太长（5月底到8月底），而我在这酷热的夏天既不上暑课也不实习，而是呆在家里享清福，决定继续折腾 homelab。
 
-在这个时间节点戴尔 14G 的价格已经降到了一个比较合适的水平，同时 LGA3647 的 CPU 相比上一代的 LGA2011 多出许多功能（主包看中的是AVX512），于是决定购入 R640 服务器。
+在这个时间节点戴尔 14G 的价格已经降到了一个比较合适的水平，同时 LGA3647 的 CPU 相比上一代的 LGA2011 多出许多功能（我看中的是AVX512），于是决定购入 R640 服务器。
 
 ## 配置
 
-由于是二手/十八手/翻新的服务器，购入准系统后主包可以自行选择搭配的硬件，截止到目前为止，配置如下：
+由于是二手/十八手/翻新的服务器，购入准系统后我可以自行选择搭配的硬件，截止到目前为止，配置如下：
 
 - **机箱/主板/硬盘背板**: [PowerEdge R640](https://www.dell.com/support/product-details/en-us/product/poweredge-r640/resources/search)
 - **CPU**: 2x [Intel Xeon Gold 6230](https://www.intel.com/content/www/us/en/products/sku/192437/intel-xeon-gold-6230-processor-27-5m-cache-2-10-ghz/specifications.html)
@@ -20,4 +20,4 @@
 
 ## 折腾经历
 
-请使用左侧导航栏查看主包踩坑的心酸历史。
+请使用左侧导航栏查看我踩坑的心酸历史。

@@ -3,9 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/bmyjacks/bmyjacks.net?style=for-the-badge&label=LAST%20UPDATE)
 ![GitHub Discussions](https://img.shields.io/github/discussions/bmyjacks/bmyjacks.net?style=for-the-badge)
 
-这是一个个人知识库，旨在记录和分享我[^1]在技术、生活等方面的经验和见解。内容包括但不限于：
-
-[^1]: 在整个知识库中，“我”、“主包”均代指 bmyjacks。
+这是一个个人知识库，旨在记录和分享我在技术、生活等方面的经验和见解。内容包括但不限于：
 
 - 技术教程
 - 生活经验（暂无）
