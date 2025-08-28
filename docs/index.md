@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # 欢迎来到 bmyjacks 的知识库
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/bmyjacks/bmyjacks.net?style=for-the-badge&label=LAST%20UPDATE)
@@ -15,3 +20,11 @@
 如果您有任何建议或意见，欢迎通过 [GitHub Discussions](https://github.com/bmyjacks/bmyjacks.net/discussions) 来共同交流。
 
 最后，**感谢您的访问！希望您能在这里找到有用的信息**。
+
+## 关于我
+
+我目前是一名大三的学生，就读于[香港中文大学（深圳）](https://www.cuhk.edu.cn/zh-hans)，专业是[计算机科学与技术](https://sds.cuhk.edu.cn/page/363)，感兴趣的方向为高性能计算，尤其在优化现有系统方面。
+
+## 朋友们
+
+- [Zihao FANG](https://fzhwenzhou.github.io/) @ CUHK(SZ)
