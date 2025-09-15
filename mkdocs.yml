@@ -115,6 +115,7 @@ markdown_extensions:
   - pymdownx.snippets
   - admonition
   - pymdownx.details
+  - pymdownx.keys
 
 nav:
   - 主页: index.md
@@ -136,6 +137,8 @@ nav:
           - Arch Linux: os/archlinux.md
           - NixOS: os/nixos.md
           - 安装 iSM: homelab/install-ism.md
+  - Softwares:
+      - tmux: softwares/tmux.md
   - Minecraft:
       - 服务器:
           - 安装 NeoForge 服务器端: minecraft/install-neoforge-server.md

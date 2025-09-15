@@ -23,7 +23,7 @@ hide:
 
 ## 关于我
 
-我目前是一名大三的学生，就读于[香港中文大学（深圳）](https://www.cuhk.edu.cn/zh-hans)，专业是[计算机科学与技术](https://sds.cuhk.edu.cn/page/363)，感兴趣的方向为高性能计算，尤其在优化现有系统方面。
+我目前是一名大三的学生，就读于[香港中文大学(深圳)](https://www.cuhk.edu.cn/zh-hans)，专业是[计算机科学与技术](https://sds.cuhk.edu.cn/page/363)，感兴趣的方向为高性能计算（尤其在系统管理方面）。
 
 ## 朋友们
 
